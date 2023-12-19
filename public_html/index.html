@@ -10,6 +10,56 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <div># método que nos permite agregar una compra
+def agregar_compra(compras):
+    monto = float(input("Ingresa el monto de la compra: "))
+    compras. append(monto)
+    print("Compra agregada!")
+
+
+# método que nos permite mostrar las compras
+def mostrar_compras(compras):
+    if len(compras) == 0:
+        print("No hay compras registradas")
+    De lo contrario:
+        Para I, compra in enumerate(compras):
+            print(f"Compra {i + 1}: {compra}")
+
+
+# método que nos permite mostrar el total gastado
+def mostrar_total(compras):
+    total = sum(compras)
+    print(f"El total gastado es: ${total:,.2f}")
+
+
+def main():
+    Compras = []
+    total_gastado = 0
+
+    mientras que True:
+        Impresión("""
+    Menú
+    1. Agregar compra
+    2. Mostrar compras
+    3. Mostrar total gastado 
+    4. Salir
+    """)
+
+        opcion = int(input("Selecciona una opción: "))
+
+        Si opcion == 1:
+            agregar_compra(compras)
+        opción elif  == 2:
+            mostrar_compras(compras)
+        opción elif  == 3:
+            mostrar_total(compras)
+        opción elif  == 4:
+            print("Hasta luego")
+            salida()
+        De lo contrario:
+            print("Opción inválida")
+
+
+principal()</div>
     </body>
 </html>
